@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     submit.addEventListener('click', (event) => {
         event.preventDefault()
         addBook()
-        document.getElementById('formBook').reset()
     })
 
     inputSearch.addEventListener('input', (event) => {
@@ -27,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         loadDataFromStorage()
     }
 })
+
+const validation = () => {
+    const form = document.getElementById('formBook')
+    const bookTitle = document.getElementById('title').value
+    const bookAuthor = document.getElementById('author').value
+    const bookYear = document.getElementById('year').value
+
+}
 
 const generateBookId = () => {
     return +new Date()
@@ -50,17 +57,27 @@ document.addEventListener(RENDER_EVENT, () => {
 })
 
 const addBook = () => {
+    const form = document.getElementById('formBook')
+    const submit = document.getElementById('addNewBook')
+
     const bookId = generateBookId()
     const bookTitle = document.getElementById('title').value
     const bookAuthor = document.getElementById('author').value
     const bookYear = document.getElementById('year').value
     const readBook = document.getElementById('read').checked
 
-    const bookObject = generateBook(bookId, bookTitle, bookAuthor, bookYear, readBook)
-    books.push(bookObject)
+    if (bookTitle == '' && bookAuthor == '' && bookYear == '') {
+        form.classList.add('was-validated')
+    } else {
+        form.reset()
+        submit.setAttribute('data-bs-dismiss', 'modal')
+
+        const bookObject = generateBook(bookId, bookTitle, bookAuthor, bookYear, readBook)
+        books.push(bookObject)
+        saveData()
+    }
 
     document.dispatchEvent(new Event(RENDER_EVENT))
-    saveData()
 }
 
 const createBookList = (bookObject) => {
