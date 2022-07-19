@@ -246,7 +246,6 @@ const searchBook = () => {
 }
 
 const resetForm = () => {
-    const form = document.getElementById('formBook')
-    form.reset()
-    form.classList.remove('was-validated')
-}
+        const form = document.getElementById('formBook')
+        form.reset()
+        form.classList.remove('was-validated')
