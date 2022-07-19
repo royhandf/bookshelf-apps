@@ -70,6 +70,7 @@ const addBook = () => {
         form.classList.add('was-validated')
     } else {
         form.reset()
+        form.classList.remove('was-validated')
         submit.setAttribute('data-bs-dismiss', 'modal')
 
         const bookObject = generateBook(bookId, bookTitle, bookAuthor, bookYear, readBook)
