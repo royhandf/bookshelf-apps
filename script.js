@@ -27,14 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-const validation = () => {
-    const form = document.getElementById('formBook')
-    const bookTitle = document.getElementById('title').value
-    const bookAuthor = document.getElementById('author').value
-    const bookYear = document.getElementById('year').value
-
-}
-
 const generateBookId = () => {
     return +new Date()
 }
@@ -66,10 +58,12 @@ const addBook = () => {
     const bookYear = document.getElementById('year').value
     const readBook = document.getElementById('read').checked
 
+    resetForm()
+
     if (bookTitle == '' && bookAuthor == '' && bookYear == '') {
         form.classList.add('was-validated')
+        submit.removeAttribute('data-bs-dismiss')
     } else {
-        form.reset()
         submit.setAttribute('data-bs-dismiss', 'modal')
 
         const bookObject = generateBook(bookId, bookTitle, bookAuthor, bookYear, readBook)
@@ -249,4 +243,10 @@ const searchBook = () => {
     })
 
     document.dispatchEvent(new Event(RENDER_SEARCH))
+}
+
+const resetForm = () => {
+    const form = document.getElementById('formBook')
+    form.reset()
+    form.classList.remove('was-validated')
 }
