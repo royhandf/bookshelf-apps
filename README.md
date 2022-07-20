@@ -6,7 +6,7 @@
   <a href="https://royhandf.github.io/bookshelf-apps/" style="text-decoration:none;">Demo Program</a>
 </p>
 
-## Cara Menggunakannya
+## How to Use
 
 - Pertama, Anda harus menambahkan buku Anda
 - Kemudian Anda dapat mengatur buku mana yang ingin Anda baca ulang atau selesai baca
@@ -14,7 +14,7 @@
 Anda dapat menghapus buku Anda jika Anda mau, tetapi jika Anda membutuhkannya lagi, Anda harus menambahkan buku Anda lagi
 Anda dapat mencari buku Anda berdasarkan judul.
 
-## Teknologi Yang Digunakan
+## Technology Used
 
 - HTML
 - CSS
