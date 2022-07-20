@@ -64,12 +64,13 @@ const addBook = () => {
         form.classList.add('was-validated')
         submit.removeAttribute('data-bs-dismiss')
     } else {
-        submit.setAttribute('data-bs-dismiss', 'modal')
+        
 
         const bookObject = generateBook(bookId, bookTitle, bookAuthor, bookYear, readBook)
         books.push(bookObject)
         saveData()
     }
+    submit.setAttribute('data-bs-dismiss', 'modal')
 
     document.dispatchEvent(new Event(RENDER_EVENT))
 }
