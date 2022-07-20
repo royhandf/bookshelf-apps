@@ -6,14 +6,15 @@
   <a href="https://royhandf.github.io/bookshelf-apps/" style="text-decoration:none;">Demo Program</a>
 </p>
 
-## How to use
+## Cara Menggunakannya
 
-- First, you must add your first book
-- Then you can set which book you want to read or have been read
+- Pertama, Anda harus menambahkan buku Anda
+- Kemudian Anda dapat mengatur buku mana yang ingin Anda baca ulang atau selesai baca
 
-You can delete your book if you want, but if you need a deleted book, you have to add your book again.
+Anda dapat menghapus buku Anda jika Anda mau, tetapi jika Anda membutuhkannya lagi, Anda harus menambahkan buku Anda lagi
+Anda dapat mencari buku Anda berdasarkan judul.
 
-## Technology Used
+## Teknologi Yang Digunakan
 
 - HTML
 - CSS
