@@ -1,25 +1,47 @@
-<h1 align="center">Bookshelf Apps</h1>
+# Dicoding - Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage
 
-![thumbnail](assets/thumbnail.png)
+Ini adalah project submission aplikasi pengelolaan data menggunakan [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) dan [Web Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API), course [Belajar Membuat Front-End Web untuk Pemula - Dicoding](https://www.dicoding.com/academies/315).
+Dicoding hadir sebagai platform pendidikan teknologi yang membantu menghasilkan talenta digital berstandar global.
 
-<p align="center">
-  <a href="https://royhandf.github.io/bookshelf-apps/" style="text-decoration:none;">Demo Program</a>
-</p>
+## Table of contents
 
-## How to Use
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Features](#features)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-- Pertama, Anda harus menambahkan buku Anda
-- Kemudian Anda dapat mengatur buku mana yang ingin Anda baca ulang atau selesai baca
+## Overview
 
-Anda dapat menghapus buku Anda jika Anda mau, tetapi jika Anda membutuhkannya lagi, Anda harus menambahkan buku Anda lagi
-Anda dapat mencari buku Anda berdasarkan judul.
+### Screenshot
 
-## Technology Used
+![](./new_screenshot.png)
+
+### Features
+
+- Mampu Menambahkan Data Buku baru.
+- Memiliki minimal Dua Rak Buku. Yakni “Belum selesai dibaca” dan “Selesai dibaca”.
+- Dapat Memindahkan Buku antar Rak.
+- Dapat Menghapus Data Buku.
+- Memanfaatkan localStorage dalam Menyimpan Data Buku.
+
+### Links
+
+- [Live site URL](https://ijuldev.github.io/bookshelf-app)
+
+## My process
+
+### Built with
 
 - HTML
 - CSS
-- Javascript
+- Flexbox
+- JavaScript
+- Custom Event JavaScript
 
 ## Author
 
-This website was created by [Royhan Daffa](https://github.com/royhandf)
+- Instagram - [@zulfikar.pinem](https://www.instagram.com/zulfikar.pinem)
+- Facebook - [@mhd.zulfikar.pinem](https://www.facebook.com/mhd.zulfikar.pinem)
